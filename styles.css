@@ -1,0 +1,314 @@
+body{
+    background-image: url(bg.jpg);
+    background-size: cover;
+    height: 100%;
+}
+h1{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    font-size: 100px;
+    position: absolute;
+    color: whitesmoke;
+}
+.btn{
+    height: 3rem;
+    width: 8rem;
+    border: 1px solid whitesmoke;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: transparent;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+.btn:hover{
+    height: 3rem;
+    width: 8rem;
+    border: 1px solid whitesmoke;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: whitesmoke;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: #FF8DC7;
+    cursor: pointer;
+}
+#top-btns{
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    left: 600px;
+    top: 20px;
+}
+#timer{
+    position: absolute;
+    left: 650px;
+    top: 220px;
+}
+#bottom-btns{
+    position: absolute;
+    top: 500px;
+    left: 700px;
+}
+#pause-play{
+    height: 50px;
+    width: 60px;
+    border: 2px solid whitesmoke;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-left: 6px;
+    margin-right: 35px;
+    background-color: whitesmoke;
+}
+#restart{
+    height: 50px;
+    width: 60px;
+    border: 2px solid whitesmoke;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-left: 6px;
+    margin-right: 35px;
+    background-color: whitesmoke;
+}
+#pause-play:hover{
+    background-color: transparent;
+    cursor: pointer;
+}
+#restart:hover{
+    background-color: transparent;
+    cursor: pointer;
+}
+#Pomodoro{
+    margin-right: 15px;
+}
+#Short{
+    margin-right: 15px;
+}
+.input1{
+    width: 150px;
+    height: 50px;
+    border-radius: 4px;
+    margin: 10px;
+    border: 1px solid white;
+    background-color: whitesmoke;
+    font-size: large;
+    text-align: center;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    transform: translate(40%, 50%) scale(1.5,1.5);
+}
+input[type="button" i]{
+    height: 3rem;
+    width: 8rem;
+    border: 1px solid whitesmoke;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: transparent;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: black;
+    position: absolute;
+    left: 82px;
+    top: 143px
+}
+input[type="button" i]:hover{
+    height: 3rem;
+    width: 8rem;
+    border: 1px solid whitesmoke;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: whitesmoke;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: #FF8DC7;
+    cursor: pointer;
+}
+#container1{
+    background-color: #F8E8EE;
+    width: 300px;
+    height: 200px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: none;
+}
+
+#modal-overlay{
+    position: fixed;
+    top: 4.5em;
+    left: 32em;
+}
+#close-modal{
+    color: black;
+    position: absolute;
+    top: 5px;
+    right: 18px;
+    background-color: transparent;
+    border: 0px;
+    z-index: 1000;
+}
+#close-modal:hover{
+    cursor: pointer;
+}
+
+/*Short Break Button*/
+.input2{
+    width: 150px;
+    height: 50px;
+    border-radius: 4px;
+    margin: 10px;
+    border: 1px solid white;
+    background-color: whitesmoke;
+    font-size: large;
+    text-align: center;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    transform: translate(40%, 50%) scale(1.5,1.5);
+}
+input[type="button" i]{
+    height: 3rem;
+    width: 8rem;
+    border: 1px solid whitesmoke;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: transparent;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: black;
+    position: absolute;
+    left: 82px;
+    top: 143px
+}
+input[type="button" i]:hover{
+    height: 3rem;
+    width: 8rem;
+    border: 1px solid whitesmoke;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: whitesmoke;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: #FF8DC7;
+    cursor: pointer;
+}
+#container2{
+    background-color: #F8E8EE;
+    width: 300px;
+    height: 200px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: none;
+}
+
+#modal-overlay2{
+    position: fixed;
+    top: 4.5em;
+    left: 40em;
+}
+#close-modal2{
+    color: black;
+    position: absolute;
+    top: 5px;
+    right: 18px;
+    background-color: transparent;
+    border: 0px;
+    z-index: 1000;
+}
+#close-modal2:hover{
+    cursor: pointer;
+}
+
+/*Long Break*/
+.input3{
+    width: 150px;
+    height: 50px;
+    border-radius: 4px;
+    margin: 10px;
+    border: 1px solid white;
+    background-color: whitesmoke;
+    font-size: large;
+    text-align: center;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    transform: translate(40%, 50%) scale(1.5,1.5);
+}
+input[type="button" i]{
+    height: 3rem;
+    width: 8rem;
+    border: 1px solid whitesmoke;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: transparent;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: black;
+    position: absolute;
+    left: 82px;
+    top: 143px
+}
+input[type="button" i]:hover{
+    height: 3rem;
+    width: 8rem;
+    border: 1px solid whitesmoke;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: whitesmoke;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: #FF8DC7;
+    cursor: pointer;
+}
+#container3{
+    background-color: #F8E8EE;
+    width: 300px;
+    height: 200px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: none;
+}
+
+#modal-overlay3{
+    position: fixed;
+    top: 4.5em;
+    left: 51em;
+}
+#close-modal3{
+    color: black;
+    position: absolute;
+    top: 5px;
+    right: 18px;
+    background-color: transparent;
+    border: 0px;
+    z-index: 1000;
+}
+#close-modal3:hover{
+    cursor: pointer;
+}

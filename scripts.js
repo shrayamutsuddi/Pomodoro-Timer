@@ -40,7 +40,6 @@ function pausePlay(){
     }
 }
 
-
 /*Pomodoro button*/
 var pomodoroBtnEl = document.getElementById("Pomodoro"); //the button that opens the popup
 var containerEl = document.getElementById("container1");
@@ -48,6 +47,7 @@ var startButtonEl = document.getElementById("Start");
 var closeModalEl = document.getElementById("close-modal");
 
 pomodoroBtnEl.onclick = function(){
+    closeModals();
     containerEl.style.display = "block";
 }
 closeModalEl.onclick = function(event){
@@ -73,6 +73,7 @@ var startButtonEl2 = document.getElementById("StartBr1");
 var closeModalEl2 = document.getElementById("close-modal2");
 
 shortBrEl.onclick = function(){
+    closeModals();
     containerEl2.style.display = "block";
 }
 
@@ -98,6 +99,7 @@ var startButtonEl3 = document.getElementById("StartBr2");
 var closeModalEl3 = document.getElementById("close-modal3");
 
 longBrEl.onclick = function(){
+    closeModals();
     containerEl3.style.display = "block";
 }
 
@@ -130,3 +132,8 @@ function restartTimer(){
     pauseBtn.style.display = "none"; // Hide the pause button
 }
 
+function closeModals(){
+    containerEl.style.display = "none";
+    containerEl2.style.display = "none";
+    containerEl3.style.display = "none";
+}

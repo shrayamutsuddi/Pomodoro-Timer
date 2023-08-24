@@ -1,56 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Pomodoro</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="top-btns">
-    <button class="btn" id="Pomodoro">Pomodoro</button>
-    <div id="modal-overlay">
+      <button class="btn" id="Pomodoro">Pomodoro</button>
+      <div id="modal-overlay">
         <div id="container1">
-            <input type="number" min="3" class="input1">
-            <input type="button" value="Start" id="Start" onclick="startTimer()">
-            <button id="close-modal">X</button>
+          <input type="number" min="3" class="input1" />
+          <input
+            type="button"
+            value="Start"
+            id="Start"
+            onclick="startTimer()"
+          />
+          <button id="close-modal">X</button>
         </div>
-    </div>
+      </div>
 
-    <button class="btn" id="Short">Short Break</button>
-    <div id="modal-overlay2">
+      <button class="btn" id="Short">Short Break</button>
+      <div id="modal-overlay2">
         <div id="container2">
-            <input type="number" min="5" class="input2">
-            <input type="button" value="Start" id="StartBr1">
-            <button id="close-modal2">X</button>
+          <input type="number" min="5" class="input2" />
+          <input type="button" value="Start" id="StartBr1" />
+          <button id="close-modal2">X</button>
         </div>
-    </div>
+      </div>
 
-    <button class="btn" id="Long">Long Break</button>
-    <div id="modal-overlay3">
+      <button class="btn" id="Long">Long Break</button>
+      <div id="modal-overlay3">
         <div id="container3">
-            <input type="number" min="10" class="input3">
-            <input type="button" value="Start" id="StartBr2">
-            <button id="close-modal3">X</button>
+          <input type="number" min="10" class="input3" />
+          <input type="button" value="Start" id="StartBr2" />
+          <button id="close-modal3">X</button>
         </div>
-    </div>
+      </div>
     </div>
 
     <div id="timer">
-        <h1>30:00</h1>
+      <h1 id="timer-text">30:00</h1>
     </div>
     <div id="bottom-btns">
-    <button id="pause-play" onclick="pausePlay()">
-        <img src="play-buttton (1).png" alt="play-button">
-        <img src="pause.png" alt="pause-button" style="display: none;">
-    </button>
-    <button id="restart">
-        <img src="restart.png" alt="restart">
-    </button>
+      <button id="pause-play" onclick="pausePlay()">
+        <img id="playbtn" src="play-buttton (1).png" alt="play-button" />
+        <img
+          id="pausebtn"
+          src="pause.png"
+          alt="pause-button"
+          style="display: none"
+        />
+      </button>
+      <button id="restart">
+        <img src="restart.png" alt="restart" />
+      </button>
     </div>
     <script src="scripts.js"></script>
-</body>
+  </body>
 </html>

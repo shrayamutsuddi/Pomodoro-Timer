@@ -90,6 +90,7 @@ startButtonEl2.onclick = function startTimer() {
   const inputTimeInMins = parseFloat(document.querySelector(".input2").value);
   if (!isNaN(inputTimeInMins) && inputTimeInMins > 0) {
     containerEl2.style.display = "none";
+  }
 }
 
 startButtonEl2.onclick = function startTimer(){

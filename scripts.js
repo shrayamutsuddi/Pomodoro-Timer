@@ -90,12 +90,19 @@ startButtonEl2.onclick = function startTimer() {
   const inputTimeInMins = parseFloat(document.querySelector(".input2").value);
   if (!isNaN(inputTimeInMins) && inputTimeInMins > 0) {
     containerEl2.style.display = "none";
-    timeLeft = inputTimeInMins * 60;
-    updateDisplay();
-    clearInterval(intervalID);
-    intervalID = setInterval(updateTimer, 1000);
-  }
-};
+}
+
+startButtonEl2.onclick = function startTimer(){
+    var inputTimeInMins = parseFloat(document.querySelector(".input2").value);
+    if(!isNaN(inputTimeInMins) && inputTimeInMins>0){
+        containerEl2.style.display = "none";
+        document.body.style.backgroundImage = "url('flowers-8100386.jpg')";
+        timeLeft = inputTimeInMins*60;
+        updateDisplay();
+        clearInterval(intervalID);
+        intervalID = setInterval(updateTimer, 1000);
+    }
+}
 
 /*Long Break*/
 const longBrEl = document.getElementById("Long");
@@ -112,16 +119,18 @@ closeModalEl3.onclick = function () {
   containerEl3.style.display = "none";
 };
 
-startButtonEl3.onclick = function startTimer() {
-  const inputTimeInMins = parseFloat(document.querySelector(".input2").value);
-  if (!isNaN(inputTimeInMins) && inputTimeInMins > 0) {
-    containerEl3.style.display = "none";
-    timeLeft = inputTimeInMins * 60;
-    updateDisplay();
-    clearInterval(intervalID);
-    intervalID = setInterval(updateTimer, 1000);
-  }
-};
+
+startButtonEl3.onclick = function startTimer(){
+    var inputTimeInMins = parseFloat(document.querySelector(".input2").value);
+    if(!isNaN(inputTimeInMins) && inputTimeInMins>0){
+        containerEl3.style.display = "none";
+        document.body.style.backgroundImage = "url('broccoli-8174625.jpg')";
+        timeLeft = inputTimeInMins*60;
+        updateDisplay();
+        clearInterval(intervalID);
+        intervalID = setInterval(updateTimer, 1000);
+    }
+}
 
 /*restart timer*/
 const restartButtonEl = document.getElementById("restart");
